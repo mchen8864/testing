@@ -1,0 +1,16 @@
+name = "testing"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "testing_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "testing.wasm"
+command = "npm run build:release"
